@@ -24,4 +24,8 @@ A search interface that highlights matching text in a list of items in real-time
 - HTML, CSS, JavaScript and React library were used to build this project.
 - The project uses a simple string matching algorithm to filter the list of items.
 
+### Deployment
+The deployed project can be accessed through this link on Vercel
+https://real-time-search-micjohn.vercel.app/
+
 Copyright 2024 [Michael John].
