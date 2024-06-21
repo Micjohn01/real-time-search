@@ -32,11 +32,11 @@ function App() {
       </div>
       {filteredData.length > 0 && search.length > 0 && (
         <ul className="ul">
-          {filteredData.map((f, i) => {
+          {filteredData.map((filtering, indicate) => {
             const regexP = new RegExp(search, "gi");
-            const matches = f.match(regexP);
+            const matches = filtering.match(regexP);
 
-            let modifiedText = f;
+            let modifiedText = filtering;
 
             matches?.forEach((match) => {
               modifiedText = modifiedText.replaceAll(
@@ -58,7 +58,7 @@ function App() {
             });
 
             return (
-              <li key={i} dangerouslySetInnerHTML={{ __html: modifiedText }} />
+              <li key={indicate} dangerouslySetInnerHTML={{ __html: modifiedText }} />
             );
           })}
         </ul>
